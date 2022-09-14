@@ -1,11 +1,28 @@
 import React from 'react'
+import { createClient } from "next-sanity";
+import sanityConfig from '../config/sanity.server'
 
-const MenuCard = () => {
+const LunchMenuCard = ({lunchItems}) => {
+
+ 
+
     return (
         // container
         <div className='grid grid-cols-2 gap-4 p-4 bg-white w-8/12 rounded-sm m-auto shadow-2xl   '>
-            {/* left */}
-            <div className="">
+
+
+{lunchItems.map(item => (
+                <div key={item._id}>{item.foodItem}</div>
+               ))}
+
+
+
+
+
+
+
+         
+            {/* <div className="">
 
                 <div className="m-4">
                     <h2 className="text-lg">
@@ -64,7 +81,7 @@ const MenuCard = () => {
             </div>
 
 
-            {/* right */}
+       
             <div className="">
 
                 <div className="m-4">
@@ -124,9 +141,15 @@ const MenuCard = () => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
+
+            
         </div>
     )
 }
 
-export default MenuCard
+export default LunchMenuCard
+
+
+
+

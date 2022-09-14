@@ -18,6 +18,9 @@ const Navbar = () => {
         <a className='hover:text-white hover:bg-[#BF5B63] p-4 rounded-sm'>Lunch</a>
       </Link>
 
+      <Link href="/dinner">
+        <a className='hover:text-white hover:bg-[#BF5B63] p-4 rounded-sm'>Dinner</a>
+      </Link>
 
     </div>
   )
