@@ -14,24 +14,22 @@ export async function getServerSideProps() {
         useCdn: false
     })
 
-    const menuItems = await client.fetch(`*[_type == "lunch"]`);
+    const lunchItems = await client.fetch(`*[_type == "lunch"]`);
 
 
     return {
         props: {
-            menuItems
+            lunchItems
         }
     }
 }
 
-const Lunch = ({menuItems}) => {
-
-    //console.log(menuItems)
+const Lunch = ({lunchItems}) => {
     return (
         <div className='grid grid-cols-3 bg-[#F4EAE4]'>
 
             <div className=" m-6 col-span-2">
-                <MenuCard menuItems={menuItems}/>
+                <MenuCard lunchItems={lunchItems}/>
             </div>
 
             <div className="m-6 justify-self-start">
