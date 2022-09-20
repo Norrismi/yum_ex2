@@ -1,6 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import restaurant from '../assets/restaurant.jpg'
+import Link from 'next/link'
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -15,41 +18,43 @@ import {
 
 const Home: NextPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2 bg-[#F4EAE4]">
-      {/* <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head> */}
-
-  
+    <div className="flex min-h-screen flex-col items-center bg-[#F4EAE4]">
 
 
 
+      <h2 className="text-6xl mt-10">The Latin Cusine</h2>
 
-      {/* <footer className="w-full grid grid-cols-3 justify-items-center  border-t">
-        <div className="text-4xl p-6">
-          The Latin Cuisine
-        </div>
-        <div className="p-6">
+      <div className="mt-10 shadow-2xl">
 
-          <div className=" text-lg">
-            123 Main Street,
-          </div>
-          <div className=" text-lg">
-            Bluffton SC, 29910
-          </div>
-          <div className="m-10">
-            <FontAwesomeIcon icon={faFacebook} />
-            <FontAwesomeIcon icon={faInstagram} />
+        <Image
 
-          </div>
-        </div>
+          // loader={myLoader}
+          src={restaurant}
+          alt="Picture of the the restaurant"
+        // width={500}
+        // height={500}
+        />
+      </div>
 
-        <div className="p-6 text-lg">
-          (555) 555-5555
-        </div>
 
-      </footer> */}
+      <div className="mt-10 flex row w-4/12 justify-evenly">
+
+        <Link href="/lunch" >
+          <button className="bg-[#BF5B63] hover:bg-[#9d3740] shadow-2xl text-white font-bold py-2 px-4 rounded-full">
+            Lunch Menu
+          </button>
+        </Link>
+
+        <Link href="/dinner" >
+          <button className="bg-[#BF5B63] hover:bg-[#9d3740] shadow-2xl text-white font-bold py-2 px-4 rounded-full">
+            Dinner Menu
+          </button>
+        </Link>
+
+      </div>
+
+
+
     </div>
   )
 }
