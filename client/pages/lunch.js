@@ -26,13 +26,13 @@ export async function getServerSideProps() {
 
 const Lunch = ({lunchItems}) => {
     return (
-        <div className='grid grid-cols-3 min-h-screen bg-[#F4EAE4]'>
+        <div className='sm:flex sm:flex-col lg:flex-row min-h-screen bg-[#F4EAE4]'>
 
-            <div className=" m-6 col-span-2">
+            <div className="p-6 w-11/12 ">
                 <MenuCard lunchItems={lunchItems}/>
             </div>
 
-            <div className="m-6 justify-self-start">
+            <div className="p-6 flex sm:flex-col place-items-center ">
                 <Image
                     // loader={myLoader}
                     src={app}

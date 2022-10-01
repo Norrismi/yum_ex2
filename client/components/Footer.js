@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="w-full grid grid-cols-3 justify-items-center  border-t border-t-orange-300 p-10 bg-[#9d3740]">
-            <div className="text-white text-4xl p-6">
+        <footer className=" flex flex-col place-items-center  w-full lg:grid grid-cols-3 justify-items-center p-10 bg-[#9d3740]">
+            <div className=" sm:items-center text-white  text-4xl p-6">
                 The Latin Cuisine
             </div>
             <div className="p-6">
 
-                <div className=" text-white text-lg">
+                <div className=" sm:items-center sm:justify-center  text-white text-lg">
                     123 Main Street,
                 </div>
                 <div className=" text-white text-lg">
