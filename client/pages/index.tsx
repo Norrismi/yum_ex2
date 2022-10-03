@@ -22,9 +22,9 @@ const Home: NextPage = () => {
 
 
 
-      <h2 className="text-6xl mt-10">The Latin Cusine</h2>
+      <h2 className="text-6xl mt-10 text-[#9d3740]">The Latin Cusine</h2>
 
-      <div className="mt-10 shadow-2xl">
+      <div className="mt-10 shadow-2xl m-6">
 
         <Image
 
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
       </div>
 
 
-      <div className="mt-10 flex row w-4/12 justify-evenly">
+      <div className="flex flex-col justify-between mt-10 lg:flex lg:flex-row xl:row w-4/12 lg:justify-evenly">
 
         <Link href="/lunch" >
           <button className="bg-[#BF5B63] hover:bg-[#9d3740] shadow-2xl text-white font-bold py-2 px-4 rounded-full">
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
         </Link>
 
         <Link href="/dinner" >
-          <button className="bg-[#BF5B63] hover:bg-[#9d3740] shadow-2xl text-white font-bold py-2 px-4 rounded-full">
+          <button className="bg-[#BF5B63] hover:bg-[#9d3740] shadow-2xl text-white font-bold py-2 px-4 rounded-full mt-4 lg:mt-0 ">
             Dinner Menu
           </button>
         </Link>
