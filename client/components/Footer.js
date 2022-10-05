@@ -1,4 +1,6 @@
 import React from 'react'
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
@@ -17,6 +19,8 @@ const Footer = () => {
                 <div className="m-10">
                     {/* <FontAwesomeIcon icon={faFacebook} />
         <FontAwesomeIcon icon={faInstagram} /> */}
+         <FontAwesomeIcon icon={faCoffee} />
+        
 
                 </div>
             </div>
